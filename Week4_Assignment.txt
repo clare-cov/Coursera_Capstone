@@ -1,0 +1,28 @@
+Capstone Project – Battle of the Neighbourhoods
+-----------------------------------------------
+
+Business Problem
+
+The client, Mr Roy, would like to start up an Indian Restaurant in one of the London Boroughs. He currently owns two successful restaurants in Birmingham but is unfamiliar with the London Boroughs and which one would be best suited to set up his third restaurant.
+
+Mr Roy’s restaurant would be opened 7 days a week in the evening only and ideally, he would like there to be passing trade from people enjoying an evening out. Mr Roy’s restaurant would also provide a take-away service and he would offer free delivery within a 3-mile radius.
+
+Mr Roy would like to understand the make-up of the London boroughs and would like a recommendation on which ones best meet his criteria. Areas with evening entertainment but also a good residential area to requiring a take-away service.
+
+
+Data Description
+----------------
+
+The following wiki page will be used to obtain the London Boroughs, the geo data and populations.
+
+https://en.wikipedia.org/wiki/List_of_London_boroughs
+
+The following CSV document shows the business success for each of the London Boroughs. This can be merged with the wiki data to give a further factor for later analysis. The 5-year survival will be used.
+
+https://data.london.gov.uk/dataset/business-demographics-and-survival-rates-borough
+ 
+Downloaded data: Business Survival Rate (CSV)
+
+The Foursquare API will be used to show venue categories for the London Boroughs. The London Borough central geo data will be used as the central search point. As the boroughs differ in size considerably, the search radius will be calculated as the square root of the borough area and converted the figure to metres.
+
+Using K-means, the venue categories for the different London boroughs will be clustered. The clusters can then be interpreted and summarised. The most suitable areas can then be presented to Mr. Roy.
